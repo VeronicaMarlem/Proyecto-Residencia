@@ -1,0 +1,54 @@
+div.informacion {
+    position: relative;
+    border-color: white;
+    border-top-style: dashed;
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 5%;
+}
+
+div.cuadro {
+    position: relative;
+    border-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    margin-bottom: 10%;
+    width: 20%;
+    height: 20%;
+    padding: 3%;
+    float: left;
+    margin-left: 30px;
+}
+
+img.iconosmaterias {
+    width: 100%;
+    filter: invert(1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    overflow: hidden;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+    white-space: nowrap;
+    color: grey;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
